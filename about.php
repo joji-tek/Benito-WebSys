@@ -36,7 +36,7 @@ $input = $_SESSION['input'];
 
         <p><strong>Biography:</strong> <?= htmlspecialchars($input['bio']) ?></p>
 
-        <div class="container d-flex">
+        <div class="container d-flex my-2">
         <a href="logout.php" class="btn btn-danger">Logout</a>
         </div>
         </div>
