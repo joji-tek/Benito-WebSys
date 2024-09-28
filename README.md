@@ -39,13 +39,28 @@
 >- [x] Done
 >#### **6. Use bootstrap 5 for your design.**
 > - [x] Done
+>
+>#### **7. Upload your output in GitHub and invite me as a collaborator (adoramarkdenver@gmail.com)**
+>- [x] Done
+
+# OUTPUT
 ><details>
-><summary>Click to show</summary> 
+><summary>Registration Form</summary> 
 >
 >![alt text](./assets/img/form.png "First working version")
 >
 ></details>
 >
->#### **7. Upload your output in GitHub and invite me as a collaborator (adoramarkdenver@gmail.com)**
->- [ ] Done
+><details>
+><summary>Registration Form Notification</summary> 
+>
+>![alt text](./assets/img/error_Form.png "First working version")
+>
+></details>
+><details>
+><summary>About Me Page</summary> 
+>
+>![alt text](./assets/img/about_me_page.png "First working version")
+>
+></details>
  
