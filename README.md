@@ -41,7 +41,7 @@
 ><details>
 ><summary>Click to show</summary> 
 >
->![alt text](./assets/img/form.png "First working form")
+>![alt text](./assets/img/form.png "First working version")
 >
 ></details>
 >
