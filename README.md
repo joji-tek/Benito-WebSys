@@ -29,7 +29,7 @@
 >>- [x] Phone number: Required, Philippine format (eg.. +639012345678).
 >>- [x] Password: Required, must be at least 8 characters, combination of alphanumeric characters, must have at least 1 uppercase letter.
 >>- [x] Confirm Password: Must match password.
->>- [xj] Gender: Required.
+>>- [x] Gender: Required.
 >>- [x] Country: Required, must be selected from the dropdown.
 >>- [x] Skills: Required, at least one checkbox must be checked.
 >>- [x] Biography: Required, max length of 200 characters.
