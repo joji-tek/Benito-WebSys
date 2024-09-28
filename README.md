@@ -14,6 +14,7 @@
 > #### **1. Create a registration form with the following fields:**
  >>- [x] Name(Text)
  >>- [x] Email(Text)
+ >>- [x] Phone number(Digits)
  >>- [x] Password(Password)
  >>- [x] Confirm Password(Password)
  >>- [x] Gender (Radio buttons)
@@ -21,21 +22,21 @@
  >>- [x] Skills (Checkboxes)
 >>- [x] Biography (Textarea)
 >#### **2. Validate and Sanitize user Inputs**
->- [ ] Done
+>- [x] Done
 >#### **3. Validation for each field is as follows (STRICTLY NO USING OF REQUIRED ATTR):**
->>- [ ] Name: Required, only letters and spaces allowed.
->>- [ ] Email: Required, must be valid email format.
->>- [ ] Facebook URL: Required, must be a valid URL format.
->>- [ ] Password: Required, must be at least 8 characters, combination of alphanumeric characters, must have at least 1 uppercase letter.
->>- [ ] Confirm Password: Must match password.
->>- [ ] Gender: Required.
->>- [ ] Country: Required, must be selected from the dropdown.
->>- [ ] Skills: Required, at least one checkbox must be checked.
->>- [ ] Biography: Required, max length of 200 characters.
+>>- [x] Name: Required, only letters and spaces allowed.
+>>- [x] Email: Required, must be valid email format.
+>>- [x] Phone number: Required, Philippine format (eg.. +639012345678).
+>>- [x] Password: Required, must be at least 8 characters, combination of alphanumeric characters, must have at least 1 uppercase letter.
+>>- [x] Confirm Password: Must match password.
+>>- [xj] Gender: Required.
+>>- [x] Country: Required, must be selected from the dropdown.
+>>- [x] Skills: Required, at least one checkbox must be checked.
+>>- [x] Biography: Required, max length of 200 characters.
 >#### **4. Display an error message for each validation of the input fields.**
->- [ ] Done
+>- [x] Done
 >#### **5. Once successful, store the values to the session. Redirect the user to ```about.php``` where you will be displaying his/her details.**
->- [ ] Done
+>- [x] Done
 >#### **6. Use bootstrap 5 for your design.**
 > - [x] Done
 ><details>
