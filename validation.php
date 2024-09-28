@@ -4,8 +4,8 @@ $_SESSION['errors'] = [];
 $valid = true;
 
 //function to sanitize data input
-function sanitize($data) {
-    return htmlspecialchars(stripslashes(trim($data)));
+function sanitize($input) {
+    return htmlspecialchars(stripslashes(trim($input)));
 }
 
 //name validation
@@ -27,7 +27,7 @@ $phone = sanitize($_POST['phone']);
 if(empty($phone) || !preg_match("/^[0-9]{10}$/", $phone)) {
     $_SESSION['errors']['phone'] = "Phone number must be exactly 10 digits.";
     $valid=false;
-} else {
+}else{
     // Add the +63 prefix for storing
     $phone = '+63' . $phone;
 }
@@ -41,7 +41,7 @@ if(empty($password) || strlen($password) < 8 || !preg_match("/[A-Za-z]/", $passw
 
 //confirm password
 $confirm_password = $_POST['confirm_password'];
-if($confirm_password !== $password) {
+if($confirm_password != $password) {
     $_SESSION['errors']['confirm_password'] = "Passwords do not match.";
     $valid=false;
 }
@@ -74,6 +74,7 @@ if(empty($bio) || strlen($bio) > 200) {
     $valid=false;
 }
 
+
 //redirection to index.php if form is invalid
 if(!$valid) {
     header('Location: index.php');
@@ -81,7 +82,7 @@ if(!$valid) {
 }
 
 //redirection to about.php if all fields are successfully done
-$_SESSION['data'] = [
+$_SESSION['input'] = [
     'name' => $name,
     'email' => $email,
     'phone' => $phone,

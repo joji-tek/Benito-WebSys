@@ -226,7 +226,7 @@
                             >
                                 <button
                                     type="button"
-                                    class="btn-close"
+                                    class="btn-close primary btn-sm"
                                     data-bs-dismiss="alert"
                                     aria-label="Close"
                                 ></button>

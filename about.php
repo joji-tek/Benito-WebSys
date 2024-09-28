@@ -1,10 +1,10 @@
 <?php
 session_start();
-if(!isset($_SESSION['data'])) {
+if(!isset($_SESSION['input'])) {
     header('Location: index.php');
     exit();
 }
-$data = $_SESSION['data'];
+$input = $_SESSION['input'];
 ?>
 
 <!DOCTYPE html>
@@ -20,13 +20,22 @@ $data = $_SESSION['data'];
     <div class="container-fluid d-flex justify-content-center align-items-center min-vh-100 w-25">
         <div class="row p-3 border rounded bg-light">
         <h2>Registered User Information</h2>
-        <p><strong>Name:</strong> <?= htmlspecialchars($data['name']) ?></p>
-        <p><strong>Email:</strong> <?= htmlspecialchars($data['email']) ?></p>
-        <p><strong>Phone:</strong> <?= htmlspecialchars($data['phone']) ?></p>
-        <p><strong>Gender:</strong> <?= htmlspecialchars($data['gender']) ?></p>
-        <p><strong>Country:</strong> <?= htmlspecialchars($data['country']) ?></p>
-        <p><strong>Skills:</strong> <?= implode(", ", $data['skills']) ?></p>
-        <p><strong>Biography:</strong> <?= htmlspecialchars($data['bio']) ?></p>
+        <p><strong>Name:</strong> <?= htmlspecialchars($input['name']) ?></p>
+        <p><strong>Email:</strong> <?= htmlspecialchars($input['email']) ?></p>
+        <p><strong>Phone:</strong> <?= htmlspecialchars($input['phone']) ?></p>
+        <p><strong>Gender:</strong> <?= htmlspecialchars($input['gender']) ?></p>
+        <p><strong>Country:</strong> <?= htmlspecialchars($input['country']) ?></p>
+        <div class="container d-flex mb-2">
+        <div>
+
+        <strong>Skills:</strong> <?php foreach($input['skills'] as $skill){
+           echo "<li class='mx-5'>$skill</li>"; 
+        }?>
+        </div>
+        </div>
+
+        <p><strong>Biography:</strong> <?= htmlspecialchars($input['bio']) ?></p>
+
         <div class="container d-flex">
         <a href="logout.php" class="btn btn-danger">Logout</a>
         </div>
