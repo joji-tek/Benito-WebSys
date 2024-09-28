@@ -56,6 +56,8 @@
 >
 >![alt text](./assets/img/error_Form.png "First working version")
 >
+>![alt text](./assets/img/passNotMatch.png "First working version")
+>
 ></details>
 ><details>
 ><summary>About Me Page</summary> 
